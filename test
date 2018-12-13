@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	h1{
+		color:blue;
+		}
+	</style>
+</head>
+<body>
+	<?php
+$time="";
+
+@$time=$_POST['time'];
+?>
+    <h1>Exemple7</h1>
+    <p> ការប្រើប្រាស់​ការប្រើប្រាស់ if elseif else Statement</p>
+    <form action="Test_if_elseif_else.php" method="POST">
+    <fieldset>
+        <legend>Form:</legend>
+           Time:
+         <input type="text" name="time" value="<?php echo $time;?>">
+    <br><br>
+        <input type="submit" value="submit">
+    </fieldset>
+  </form>
+<?php
+   
+    //echo "Time:".$time;
+	
+	//$t=date("H");
+	if ($time < "10"){
+		echo "good morning!";
+		echo '<img src="img/morning.jpg" width=50%/>';
+	} elseif ($time < "20") {
+		echo "Have a good day!";
+		echo '<img src="img/morning.jpg" width=50%/>';
+	} else {
+		echo "Have a good night!";
+		echo '<img width="50" src="img/night.jpg"/>';
+	}
+	
+?>
+
+</body>
+</html>
+   
